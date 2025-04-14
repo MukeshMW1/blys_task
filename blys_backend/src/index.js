@@ -14,24 +14,29 @@ const app = express();
 const allowedOrigins = [
     'http://localhost:5173',
     'https://blys-task-ac2tj89sm-mukeshmw1s-projects.vercel.app',
-    'https://blys-task.vercel.app',
+    'https://blys-task.vercel.app', 
   ];
   
-  
   app.use(cors({
-    origin: (origin, callback) => {
+    origin: function (origin, callback) {
+      const allowedOrigins = [
+        'https://blys-task.vercel.app', 
+        'http://localhost:5173',         
+      ];
+  
       if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true); 
+        callback(null, true);  
       } else {
-        callback(new Error('Not allowed by CORS')); 
+        callback(new Error('Not allowed by CORS'));
       }
     },
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],  
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, 
   }));
-
-  app.options('*', cors()); 
+  
+  
+  
 app.use(express.json());
 app.use(cookieParser())
 
