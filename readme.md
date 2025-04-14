@@ -52,7 +52,11 @@ Only authenticated users can manage their tasks
 📡 API Endpoints
 Method	Endpoint	Description
 POST	/register	Register a new user
+
 POST	/login	Login a user
+
 GET	/tasks	Get all user's tasks
+
 POST	/tasks	Create a new task
+
 DELETE	/tasks/:id	Delete a task by ID
