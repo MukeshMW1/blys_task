@@ -12,7 +12,8 @@ const { taskTable, userTable } = require('./data/createTable');
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173',  
+    origin: 'https://blys-task-ac2tj89sm-mukeshmw1s-projects.vercel.app',  
+    
     credentials: true,                
   }));
 app.use(express.json());
