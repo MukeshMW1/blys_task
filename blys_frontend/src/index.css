@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/41e31293-5f1a-4ade-8454-dc8bf7a47146/de77mx1-492b49d7-b2ea-4652-a25b-1c06b8afd929.jpg/v1/fill/w_1280,h_720,q_75,strp/cool_gaming_or_aesthetic_wallpaper_by_zionjakeine1407_de77mx1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNDFlMzEyOTMtNWYxYS00YWRlLTg0NTQtZGM4YmY3YTQ3MTQ2XC9kZTc3bXgxLTQ5MmI0OWQ3LWIyZWEtNDY1Mi1hMjViLTFjMDZiOGFmZDkyOS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LtiAu-Ew-LqwuRYpW_0Fsa6FSRl_Wkjean2nJlLT2Gw');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Noto Serif", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+/* Custom Cool Blue Thin Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3B82F6; /* Tailwind's blue-500 */
+  border-radius: 9999px;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3B82F6 transparent;
+}
