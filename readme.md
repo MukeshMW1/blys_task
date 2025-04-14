@@ -1,11 +1,16 @@
-:
+
 
 🛡️ Simple Authentication System with Task Manager (MERN + MySQL)
+
+
 ⚠️ Note: This application is hosted on the free tier of Vercel (frontend) and Render (backend), so the response time may be slightly slow on initial load due to server cold starts. Please allow a few seconds for backend services to spin up.
 Also note that you have to wait for few secconds after hitting the login button(locally it runs smooth) but with free limited version of render it takes time.
+
+
 📌 Assignment Overview
 Assignment Title: Build a Simple Authentication System with a Basic Feature
 Objective: Develop an application that includes user authentication and a task management feature using the MERN stack with a MySQL database.
+
 
 🚀 Live Links
 Frontend (Vercel): https://blys-task.vercel.app/
