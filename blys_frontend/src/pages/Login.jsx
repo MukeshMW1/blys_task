@@ -32,7 +32,7 @@ const onSubmit = async (e) => {
       let response;
       if (method === 'signin') {
      
-        response = await fetch('http://localhost:3000/auth/register', {
+        response = await fetch(`${process.env.RENDERURL}/auth/register`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const onSubmit = async (e) => {
 
       } else {
        
-        response = await fetch('http://localhost:3000/auth/login', {
+        response = await fetch(`${process.env.RENDERURL}/auth/login`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

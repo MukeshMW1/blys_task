@@ -6,10 +6,11 @@ const TaskList = ({render}) => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('http://localhost:3000/task/get', {
+      const response = await fetch(`${process.env.RENDERURL}/task/get`                          , {
         method: 'GET',
         credentials: 'include',
       });
+      
 
       if (!response.ok) {
         console.error('Error fetching tasks:', response.statusText);
@@ -25,7 +26,7 @@ const TaskList = ({render}) => {
 
   const handleDelete = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:3000/task/delete/${taskId}`, {
+      const response = await fetch(`${process.env.RENDERURL}/task/delete/${taskId}`, {
         method: 'DELETE',
         credentials: 'include',
       });
