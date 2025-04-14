@@ -19,15 +19,24 @@ const allowedOrigins = [
   
   app.use(cors({
     origin: function (origin, callback) {
+      const allowedOrigins = [
+        'https://blys-task.vercel.app', 
+        'http://localhost:5173',         
+      ];
+  
       if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
+        callback(null, true);  // Allow the request
       } else {
-        console.log("Blocked CORS request from:", origin);
         callback(new Error('Not allowed by CORS'));
       }
     },
-    credentials: true
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],  
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true, 
   }));
+  
+  
+  app.options('*', cors());
   
 app.use(express.json());
 app.use(cookieParser())

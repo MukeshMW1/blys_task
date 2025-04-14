@@ -14,7 +14,7 @@ const userRegister = async(req,res)=>{
    const user = await createUser(username,email,password);
    if(!user){
     
-        throw new Error('Error creating User')
+        throw new Error('Error creating the User')
     
 
    }
