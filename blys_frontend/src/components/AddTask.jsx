@@ -11,7 +11,7 @@ const AddTask = ({setRender}) => {
     e.preventDefault(); 
 
     try {
-      const response = await fetch(`${process.env.RENDERURL}/task/create`, {
+      const response = await fetch(`${import.meta.env.VITE_RENDERURL}/task/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

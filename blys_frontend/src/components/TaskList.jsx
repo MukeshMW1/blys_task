@@ -6,7 +6,7 @@ const TaskList = ({render}) => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch(`${process.env.RENDERURL}/task/get`                          , {
+      const response = await fetch(`${import.meta.env.VITE_RENDERURL}/task/get`                          , {
         method: 'GET',
         credentials: 'include',
       });
@@ -26,7 +26,7 @@ const TaskList = ({render}) => {
 
   const handleDelete = async (taskId) => {
     try {
-      const response = await fetch(`${process.env.RENDERURL}/task/delete/${taskId}`, {
+      const response = await fetch(`${import.meta.env.VITE_RENDERURL}/task/delete/${taskId}`, {
         method: 'DELETE',
         credentials: 'include',
       });

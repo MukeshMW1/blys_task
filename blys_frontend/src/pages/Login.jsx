@@ -32,7 +32,7 @@ const onSubmit = async (e) => {
       let response;
       if (method === 'signin') {
      
-        response = await fetch(`${process.env.RENDERURL}/auth/register`, {
+        response = await fetch(`${import.meta.env.VITE_RENDERURL}/auth/register`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const onSubmit = async (e) => {
 
       } else {
        
-        response = await fetch(`${process.env.RENDERURL}/auth/login`, {
+        response = await fetch(`${import.meta.env.VITE_RENDERURL}/auth/login`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
