@@ -15,7 +15,7 @@ const allowedOrigins = [
     'http://localhost:5173',
     'https://blys-task-ac2tj89sm-mukeshmw1s-projects.vercel.app',
     'https://blys-task.vercel.app', 
-    'https://blys-task.vercel.app/tasks', 
+ 
   ];
   
   app.use(cors({
